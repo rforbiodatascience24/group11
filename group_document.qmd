@@ -4,37 +4,23 @@ format: html
 editor: visual
 ---
 
-## Johanne
+## Quarto
 
-Hello this is Johanne!
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-```{r}
-libary(tidyvers)
-```
+## Running Code
 
-## Eleni
-
-eyy
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-1+1
+1 + 1
 ```
+
+You can add options to executable code like this
 
 ```{r}
-"It's Eleni"
+#| echo: false
+2 * 2
 ```
 
-## Eglantine
-
-Hello group 11!
-
-```{r}
-a <- 1
-b <- 3
-c <- a + b
-c
-```
-
-## Marie
-
-## Qyan
+The `echo: false` option disables the printing of code (only output is displayed).
