@@ -16,7 +16,6 @@ This was done in my branch! Very nice.
 
 ## Eleni
 
-
 heiehi
 
 eyy
@@ -28,7 +27,6 @@ eyy
 ```{r}
 "It's Eleni"
 ```
-
 
 ## Eglantine
 
@@ -49,7 +47,6 @@ Bonjour
 "Hej"
 ```
 
-
 Guten Tag
 
 ### New analysis
@@ -59,7 +56,6 @@ Bonjour
 ```{r}
 "Hej"
 ```
-
 
 ## Marie
 
@@ -76,7 +72,6 @@ testing123
 pl <- 1+2
 ```
 
-
 ## New feature
 
 testing123
@@ -84,7 +79,6 @@ testing123
 ```{r}
 1 + 1
 
-```{r}
 pl <- date
 
 ```
