@@ -8,6 +8,8 @@ editor: visual
 
 Hello this is Johanne
 
+This was done in my branch! Very nice.
+
 ## Eleni
 
 ## Eglantine
@@ -16,6 +18,14 @@ hello
 
 ```{r}
 1+5
+```
+
+### New analysis
+
+Bonjour
+
+```{r}
+"Hej"
 ```
 
 ## Marie
@@ -33,10 +43,15 @@ testing123
 pl <- 1+2
 ```
 
+
 ## New feature
 
 testing123
 
 ```{r}
 1 + 1
+
+```{r}
+pl <- date
+
 ```
