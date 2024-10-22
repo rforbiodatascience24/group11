@@ -6,7 +6,11 @@ editor: visual
 
 ## Johanne
 
-Hello this is johanne
+Hello this is Johanne!
+
+```{r}
+libary(tidyvers)
+```
 
 ## Eleni
 
