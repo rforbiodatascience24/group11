@@ -12,6 +12,8 @@ Hello this is Johanne!
 libary(tidyvers)
 ```
 
+This was done in my branch! Very nice.
+
 ## Eleni
 
 eyy
@@ -43,8 +45,33 @@ Bonjour
 "Hej"
 ```
 
+
 Guten Tag
+
+### New analysis
+
+Bonjour
+
+```{r}
+"Hej"
+```
+
 
 ## Marie
 
+testing123
+
+```{r}
+1+1
+
+```
+
 ## Qyan
+
+```{r}
+pl <- 1+2
+```
+
+```{r}
+pl <- date
+```
