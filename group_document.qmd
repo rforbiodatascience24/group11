@@ -1,0 +1,40 @@
+---
+title: "group_document"
+format: html
+editor: visual
+---
+
+## Johanne
+
+Hello this is Johanne!
+
+```{r}
+libary(tidyvers)
+```
+
+## Eleni
+
+eyy
+
+```{r}
+1+1
+```
+
+```{r}
+"It's Eleni"
+```
+
+## Eglantine
+
+Hello group 11!
+
+```{r}
+a <- 1
+b <- 3
+c <- a + b
+c
+```
+
+## Marie
+
+## Qyan
