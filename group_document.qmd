@@ -43,6 +43,15 @@ testing123
 pl <- 1+2
 ```
 
+
+## New feature
+
+testing123
+
+```{r}
+1 + 1
+
 ```{r}
 pl <- date
+
 ```
