@@ -6,18 +6,39 @@ editor: visual
 
 ## Johanne
 
-Hello this is Johanne
+Hello this is Johanne!
+
+```{r}
+libary(tidyvers)
+```
+
+This was done in my branch! Very nice.
 
 ## Eleni
 
+
 heiehi
+
+eyy
+
+```{r}
+1+1
+```
+
+```{r}
+"It's Eleni"
+```
+
 
 ## Eglantine
 
-hello
+Hello group 11!
 
 ```{r}
-1+5
+a <- 1
+b <- 3
+c <- a + b
+c
 ```
 
 ### New analysis
@@ -27,6 +48,18 @@ Bonjour
 ```{r}
 "Hej"
 ```
+
+
+Guten Tag
+
+### New analysis
+
+Bonjour
+
+```{r}
+"Hej"
+```
+
 
 ## Marie
 
@@ -41,4 +74,17 @@ testing123
 
 ```{r}
 pl <- 1+2
+```
+
+
+## New feature
+
+testing123
+
+```{r}
+1 + 1
+
+```{r}
+pl <- date
+
 ```
