@@ -6,17 +6,44 @@ editor: visual
 
 ## Johanne
 
-Hello this is Johanne
+Hello this is Johanne!
+
+```{r}
+libary(tidyvers)
+```
 
 ## Eleni
 
-## Eglantine
-
-hello
+eyy
 
 ```{r}
-1+5
+1+1
 ```
+
+```{r}
+"It's Eleni"
+```
+
+## Eglantine
+
+Hello group 11!
+
+```{r}
+a <- 1
+b <- 3
+c <- a + b
+c
+```
+
+### New analysis
+
+Bonjour
+
+```{r}
+"Hej"
+```
+
+Guten Tag
 
 ## Marie
 
