@@ -10,6 +10,16 @@ Hello this is johanne
 
 ## Eleni
 
+eyy
+
+```{r}
+1+1
+```
+
+```{r}
+"It's Eleni"
+```
+
 ## Eglantine
 
 ## Marie
