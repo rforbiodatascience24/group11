@@ -10,6 +10,8 @@ Hello this is Johanne
 
 ## Eleni
 
+heiehi
+
 ## Eglantine
 
 hello
@@ -27,7 +29,9 @@ Bonjour
 ```
 
 ## Marie
+
 testing123
+
 ```{r}
 1+1
 
