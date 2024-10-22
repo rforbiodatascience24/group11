@@ -19,7 +19,9 @@ hello
 ```
 
 ## Marie
+
 testing123
+
 ```{r}
 1+1
 
@@ -29,4 +31,12 @@ testing123
 
 ```{r}
 pl <- 1+2
+```
+
+## New feature
+
+testing123
+
+```{r}
+1 + 1
 ```
