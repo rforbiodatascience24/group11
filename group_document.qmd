@@ -19,7 +19,9 @@ hello
 ```
 
 ## Marie
+
 testing123
+
 ```{r}
 1+1
 
@@ -29,4 +31,8 @@ testing123
 
 ```{r}
 pl <- 1+2
+```
+
+```{r}
+pl <- date
 ```
