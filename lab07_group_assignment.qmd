@@ -10,10 +10,14 @@ editor: visual
 
 #### Eleni-Sofia Tseperi s240066, Johanne Lund s233246, Marie Picquet s233736, Eglantine Anton s233242, Wu Qiuyan s241063
 
-## library
+## Background
 
-## Data
+## Aim
 
-## Data wrangling
+## Load Library
 
-## Plots
+## Load Data
+
+## Data Description
+
+## Analysis
