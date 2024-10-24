@@ -7,3 +7,5 @@ best_ds_langs
 #ignore any data files 
 *.csv
 *.txt
+*.tsv.gz
+*.tsv
