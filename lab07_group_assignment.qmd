@@ -12,13 +12,17 @@ editor: visual
 
 ## Background
 
+Breast cancer is one of the most prevalent forms of cancer, affecting millions of women worldwide. It occurs when cells in the breast begin to grow uncontrollably, forming a tumour that can be either benign (non-cancerous) or malignant (cancerous). Early detection is critical, as it significantly increases the chances of successful treatment and survival. However, diagnosing breast cancer accurately remains a challenge due to the variability in tumour characteristics.
+
 ## Aim
 
-## Load Library
+The aim is to use Principal Component Analysis (PCA) to reduce the dimensionality of the biopsy dataset, allowing us to visualize the data in new coordinates (principal components) that capture the most variation, helping to identify patterns and relationships in the breast cancer attributes.
+
+## Load Libraries
 
 ```{r}
 #| echo: True
-#| eval: false
+#| eval: True
 library(tidyverse, verbose = FALSE)
 library(ggplot2, verbose = FALSE)
 library(broom)
@@ -29,11 +33,30 @@ library(broom)
 
 ```{r}
 #| echo: True
-#| eval: false
+#| eval: True
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
 ## Data Description
+
+We’ll be analyzing the `biopsy` dataset, which comes originally from the MASS package. It is a breast cancer dataset from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He assessed biopsies of breast tumors for 699 patients; each of nine attributes was scored on a scale of 1 to 10. The attributes are: clump_thickness, uniform_cell_size, uniform_cell_shape, marg_adhesion, epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses. The true outcome (benign/malignant) is also known.
+
+Below is a quick overview of the dataset:
+
+```{r}
+biopsy |> sample_n(10)
+```
+
+```{r}
+biopsy |>
+  count(outcome) |>
+  ggplot(mapping = aes(x = outcome, y = n, fill=outcome)) +
+  geom_col(position = "dodge", alpha=0.5, color="black") +
+  labs(title = "Distribution of biopsy outcomes for the biopsy dataset",
+       y = "Number of patients", 
+       x = "Outcome") +
+  theme(legend.position = "none")
+```
 
 ## Analysis
 
