@@ -12,11 +12,9 @@ editor: visual
 
 ## Background
 
-Breast cancer is one of the most prevalent forms of cancer, affecting millions of women worldwide. It occurs when cells in the breast begin to grow uncontrollably, forming a tumour that can be either benign (non-cancerous) or malignant (cancerous). Early detection is critical, as it significantly increases the chances of successful treatment and survival. However, diagnosing breast cancer accurately remains a challenge due to the variability in tumour characteristics.
-
-The data will be working on is the `biopsy` dataset, which comes originally from the MASS package. This breast cancer database was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He assessed biopsies of breast tumours for 699 patients up to 15 July 1992; each of nine attributes has been scored on a scale of 1 to 10, and the outcome is also known.
-
 ## Aim
+
+The aim is to use Principal Component Analysis (PCA) to reduce the dimensionality of the biopsy dataset, allowing us to visualize the data in new coordinates (principal components) that capture the most variation, helping to identify patterns and relationships in the breast cancer attributes.
 
 ## Load Library
 
