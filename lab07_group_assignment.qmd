@@ -6,6 +6,6 @@ format:
 editor: visual
 ---
 
-## GROUP 11: 
+## GROUP 11:
 
 #### Eleni-Sofia Tseperi s240066, Johanne Lund s233246, Marie Picquet s233736, Eglantine Anton s233242, Wu Qiuyan s241063
