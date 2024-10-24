@@ -46,4 +46,15 @@ Below is a quick overview of the dataset:
 biopsy |> sample_n(10)
 ```
 
+```{r}
+biopsy |>
+  count(outcome) |>
+  ggplot(mapping = aes(x = outcome, y = n, fill=outcome)) +
+  geom_col(position = "dodge", alpha=0.5, color="black") +
+  labs(title = "Distribution of biopsy outcomes for the biopsy dataset",
+       y = "Number of patients", 
+       x = "Outcome") +
+  theme(legend.position = "none")
+```
+
 ## Analysis
