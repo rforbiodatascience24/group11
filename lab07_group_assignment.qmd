@@ -94,7 +94,6 @@ arrow_style <- arrow(
   angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
 )
 
-
 pca_data |>
   tidy(matrix = "rotation") |>
   pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") |>
@@ -112,6 +111,8 @@ pca_data |>
        subtitle = "Breast cancer biopsy dataset", x="PC1", y = "PC2", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
+### Plotting the variance explained by each PC
+
 ```{r}
 pca_data |>
   tidy(matrix = "eigenvalues") |>
@@ -124,6 +125,6 @@ pca_data |>
   ) +
   theme_minimal_hgrid() +
   labs(title="Variance explained by each PC",
-       subtitle = "Breast cancer biopsy dataset", x="PC", y = "Percent", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+       subtitle = "Breast cancer biopsy dataset", x="PC", y = "Percentage of data", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 
 ```
