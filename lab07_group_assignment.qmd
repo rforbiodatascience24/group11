@@ -108,3 +108,19 @@ pca_data |>
   labs(title="Rotation matrix",
        subtitle = "Breast cancer biopsy dataset", x="PC1", y = "PC2", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
+
+```{r}
+pca_fit |>
+  tidy(matrix = "eigenvalues") |>
+  ggplot(aes(PC, percent)) +
+  geom_col(fill = "lightgreen", alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  theme_minimal_hgrid() +
+  labs(title="Variance explained by each PC",
+       subtitle = "Breast cancer biopsy dataset", x="PC", y = "Percent", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+
+```
