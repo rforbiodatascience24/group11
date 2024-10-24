@@ -56,6 +56,7 @@ biopsy |>
   labs(title = "Distribution of biopsy outcomes for the biopsy dataset",
        y = "Number of patients", 
        x = "Outcome") +
+  scale_fill_manual(values = c("malignant" = "purple", "benign" = "lightgreen")) +
   theme(legend.position = "none")
 ```
 
