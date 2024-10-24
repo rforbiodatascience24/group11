@@ -18,11 +18,11 @@ Breast cancer is one of the most prevalent forms of cancer, affecting millions o
 
 The aim is to use Principal Component Analysis (PCA) to reduce the dimensionality of the biopsy dataset, allowing us to visualize the data in new coordinates (principal components) that capture the most variation, helping to identify patterns and relationships in the breast cancer attributes.
 
-## Load Library
+## Load Libraries
 
 ```{r}
 #| echo: True
-#| eval: true
+#| eval: True
 library(tidyverse, verbose = FALSE)
 library(ggplot2, verbose = FALSE)
 
@@ -32,7 +32,7 @@ library(ggplot2, verbose = FALSE)
 
 ```{r}
 #| echo: True
-#| eval: true
+#| eval: True
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
