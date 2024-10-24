@@ -26,6 +26,7 @@ The aim is to use Principal Component Analysis (PCA) to reduce the dimensionalit
 library(tidyverse, verbose = FALSE)
 library(ggplot2, verbose = FALSE)
 library(broom)
+library(cowplot)
 
 ```
 
@@ -60,7 +61,7 @@ biopsy |>
 
 ## Analysis
 
-Normalization and getting the PCR:
+### Normalization and running the PCA:
 
 ```{r}
 pca_data <- biopsy |> 
@@ -69,7 +70,7 @@ pca_data <- biopsy |>
   prcomp() 
 ```
 
-Plotting the
+### Plotting the data in PC coordinates:
 
 ```{r}
 pca_data |>
@@ -85,13 +86,15 @@ pca_data |>
   theme(legend.position = "bottom")
 ```
 
+### Plotting the rotation matrix
+
 ```{r}
 arrow_style <- arrow(
   angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
 )
 
 
-pca_fit |>
+pca_data |>
   tidy(matrix = "rotation") |>
   pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") |>
   ggplot(aes(PC1, PC2)) +
@@ -106,17 +109,4 @@ pca_fit |>
   theme_minimal_grid(12) +
   labs(title="Rotation matrix",
        subtitle = "Breast cancer biopsy dataset", x="PC1", y = "PC2", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
-```
-
-plot:
-
-```{r}
-pca_data |>
-  augment(biopsy) |> # add original dataset back in
-  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
-  geom_point(size = 1.5) +
-  scale_color_manual(
-    values = c(malignant = "#D55E00", benign = "#0072B2")
-  ) +
-  theme_half_open(12) + background_grid()
 ```
