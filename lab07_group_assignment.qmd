@@ -111,7 +111,7 @@ pca_data |>
 ```
 
 ```{r}
-pca_fit |>
+pca_data |>
   tidy(matrix = "eigenvalues") |>
   ggplot(aes(PC, percent)) +
   geom_col(fill = "lightgreen", alpha = 0.8) +
