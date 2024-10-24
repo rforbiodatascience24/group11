@@ -16,10 +16,20 @@ editor: visual
 
 ## Load Library
 
+```{r}
+#| echo: True
+#| eval: false
+library(tidyverse, verbose = FALSE)
+library(ggplot2, verbose = FALSE)
+
+```
+
 ## Load Data
 
 ```{r}
-
+#| echo: True
+#| eval: false
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
 ## Data Description
