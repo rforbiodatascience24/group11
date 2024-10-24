@@ -2,4 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-best_ds_langs.txt
+best_ds_langs
+
+#ignore any data files 
+*.csv
+*.txt
