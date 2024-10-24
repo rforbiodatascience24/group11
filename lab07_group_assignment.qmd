@@ -111,8 +111,6 @@ pca_data |>
   labs(title="Rotation matrix",
        subtitle = "Breast cancer biopsy dataset", x="PC1", y = "PC2", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
-<<<<<<< HEAD
-=======
 
 ```{r}
 pca_fit |>
@@ -129,4 +127,3 @@ pca_fit |>
        subtitle = "Breast cancer biopsy dataset", x="PC", y = "Percent", caption="Source: https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 
 ```
->>>>>>> 75abd0ffa3dceec32d583980fd3fe70fc84aff25
